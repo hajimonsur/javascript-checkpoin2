@@ -89,3 +89,54 @@ function filterArray(numbers) {
 }
 // console.log(filterArray(number));
 
+
+
+
+
+// Mathematical Functions:
+
+
+// 1. Factorial
+
+function factorial(number) {
+    let result = 1;
+    for (let i = 1; i <= number; i++) { 
+        result *= i;
+    }
+    return result;
+}
+// console.log(factorial(5));
+
+
+// 2. Prime Number Check
+
+
+function isPrime(number) {
+    if (number <= 1) {  
+        return false;
+    }   
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+// console.log(isPrime(5));
+
+
+// 3.Fibonacci Sequence:
+
+
+function fibonacci(number) {
+    let a = 0;
+    let b = 1;  
+    let sum = 0;
+    for (let i = 0; i < number; i++) {  
+        sum = a + b;
+        a = b;
+        b = sum;
+    }
+    return sum;
+}
+// console.log(fibonacci(5));
